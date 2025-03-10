@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="materialize.css"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header class="card-panel teal lighten-2">
+            <h1 class="z-depth-4">Amazing Rock Paper Scissors Game!</h1>
+        </header>
+        <main class="container">
+            <p>
+                This is a traditional rock, paper, scissors game,
+                only on the computer. The rules are simple: Each 
+                round you can click on the rock, the paper, or the 
+                scissors to play it. If you would rather, you can 
+                press the 'r', 'p', or 's' keys on your keyboard 
+                to select your play. The computer will choose randomly.
+            </p>
+            <p>
+                Who wins? Well, rock will smash scissors, paper 
+                will cover rock, and scissors will cut paper; 
+                so each object has a chance of winning or losing. 
+                And if you and the computer both play the same 
+                object, it is a tie - nobody wins or loses.
+            </p>
+            <h3>Have Fun!</h3>
+        </main>
+            <div id="imgContainer">
+                <figure>
+                    <img id="rockBtn" src="images/rock-md.png" alt="Rock"/>
+                    <figcaption>Rock</figcaption>
+                </figure>
+                <figure>
+                    <img id="paperBtn" src="images/paper.png" alt="Paper"/>
+                    <figcaption>Paper</figcaption>
+                </figure>
+                <figure>
+                    <img id="scissorsBtn" src="images/scissors-purple.png" alt="Scissors"/>
+                    <figcaption>Scissors</figcaption>
+                </figure>
+            </div>
+            
+            <p id="results">You chose <span id="userChoice"></span>, and computer 
+                chose <span id="computerChoice"></span>: <span id="winner"></span></p>
+            <button class="teal" type="button" id="again">Play Again!</button>
+        
+        <script src="scripts.js"></script>
+    </body>
+</html>
