@@ -28,16 +28,22 @@ function calculateResults(userChoice, computerChoice) {
         case ("paper-paper"):
         case ("scissors-scissors"):
             document.getElementById("winner").innerHTML = "It is a tie!";
+            document.getElementById("results").style.backgroundColor = "#80cbc4"
+            document.getElementById("results").style.borderColor = "#80cbc4"
             break;
         case ("rock-scissors"):
         case ("paper-rock"):
         case ("scissors-paper"):
             document.getElementById("winner").innerHTML = "You win!";
+            document.getElementById("results").style.backgroundColor = "#52e383"
+            document.getElementById("results").style.borderColor = "#52e383"
             break;
         case ("rock-paper"):
         case ("paper-scissors"):
         case ("scissors-rock"):
             document.getElementById("winner").innerHTML = "Computer wins!";
+            document.getElementById("results").style.backgroundColor = "#c93f3f";
+            document.getElementById("results").style.borderColor = "#c93f3f";
             break;
         default:
             document.getElementById("winner").innerHTML = "Something went wrong, press play again";

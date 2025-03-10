@@ -46,9 +46,8 @@ h3 {
     text-align: center;
     width: fit-content;
     margin: auto;
-    border: #80cbc4 double 1px;
+    border: double 1px;
     border-radius: 8px;
-    background-color: #80cbc4;
     padding: 1em 2em;
 }
 
